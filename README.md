@@ -11,12 +11,12 @@ the contents of a set data are present and untampered with.
 
 At its core, a Merkle Tree is a list of items representing the data that should be verified. Each of these items
 is inserted into a leaf node and a tree of hashes is constructed bottom up using a hash of the nodes left and
-right children's hashes. This means that the root node will effictively be a hash of all other nodes (hashes) in
-the tree. This property allows the tree to be reproduced and thus verified by on the hash of the root node
+right children's hashes. This means that the root node will effectively be a hash of all other nodes (hashes) in
+the tree. This property allows the tree to be reproduced and thus verified by the hash of the root node
 of the tree. The benefit of the tree structure is verifying any single content entry in the tree will require only
 nlog2(n) steps in the worst case.
 
-#### Documentation 
+#### Documentation
 
 See the docs [here](https://godoc.org/github.com/cbergoon/merkletree).
 
